@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-image: url('https://img.freepik.com/premium-photo/beautiful-blurred-background-natural-spring-nature-pastel-colors_176697-13415.jpg'); /* replace with your own image */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* changed opacity to 0.5 for semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#love-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Add media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* adjust the width for mobile devices */
+        margin: 20px auto;
+        padding: 10px;
+    }
+    #love-message {
+        font-size: 24px; /* adjust the font size for mobile devices */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 80%; /* adjust the width for smaller mobile devices */
+        margin: 10px auto;
+        padding: 5px;
+    }
+    #love-message {
+        font-size: 18px; /* adjust the font size for smaller mobile devices */
+    }
+}
